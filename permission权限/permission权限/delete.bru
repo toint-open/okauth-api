@@ -5,11 +5,18 @@ meta {
 }
 
 post {
-  url: {{host}}/permission/delete?id=1942471163074772992
-  body: none
+  url: {{host}}/permission/delete
+  body: json
   auth: inherit
 }
 
-params:query {
-  id: 1942471163074772992
+body:json {
+  {
+    "ids": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
 }
