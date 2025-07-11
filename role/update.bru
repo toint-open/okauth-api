@@ -1,0 +1,20 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/role/update
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 0,
+    "code": "code_2f4bbb875b0d",
+    "name": "name_78fbb8ec7469",
+    "remark": "remark_7710422050e4"
+  }
+}

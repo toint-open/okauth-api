@@ -1,0 +1,25 @@
+meta {
+  name: create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/permission/create
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "parentId": 0,
+    "type": 0,
+    "name": "查询权限",
+    "path": "",
+    "component": "",
+    "componentName": "",
+    "icon": "",
+    "order": 0,
+    "code": "permission:listTree"
+  }
+}

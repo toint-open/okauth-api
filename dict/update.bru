@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/dict/update
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 0,
+    "type": "type_f4d4c7a8ff5b",
+    "key": "key_ee730fe218d8",
+    "value": "value_51cbc9434c13",
+    "remark": "remark_674cbfcb7454"
+  }
+}

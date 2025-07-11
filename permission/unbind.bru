@@ -1,0 +1,20 @@
+meta {
+  name: unbind
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{host}}/permission/unbind
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "roleId": 10000,
+    "permissionIds": [
+      1943368230315888640
+    ]
+  }
+}

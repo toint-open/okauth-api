@@ -1,0 +1,20 @@
+meta {
+  name: bind
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/role/bind
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "roleId": 0,
+    "userIds": [
+      0
+    ]
+  }
+}
