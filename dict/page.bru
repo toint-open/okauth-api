@@ -1,0 +1,18 @@
+meta {
+  name: page
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{host}}/dict/page
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "pageNumber": 1,
+    "pageSize": 10
+  }
+}
