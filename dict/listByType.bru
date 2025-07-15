@@ -1,0 +1,15 @@
+meta {
+  name: listByType
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{host}}/dict/listByType?type=abc
+  body: none
+  auth: inherit
+}
+
+params:query {
+  type: abc
+}

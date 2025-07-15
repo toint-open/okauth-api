@@ -1,0 +1,15 @@
+meta {
+  name: listIdByRoleId
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{host}}/permission/listId?roleId=10000
+  body: none
+  auth: inherit
+}
+
+params:query {
+  roleId: 10000
+}

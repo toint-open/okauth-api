@@ -1,0 +1,16 @@
+meta {
+  name: getByTypeAndKey
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/dict/getByTypeAndKey?type=abc&key=abc
+  body: none
+  auth: inherit
+}
+
+params:query {
+  type: abc
+  key: abc
+}

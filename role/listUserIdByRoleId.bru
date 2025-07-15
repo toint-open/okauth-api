@@ -1,0 +1,19 @@
+meta {
+  name: listUserIdByRoleId
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{host}}/role/listUserId?roleId=10000
+  body: none
+  auth: inherit
+}
+
+params:query {
+  roleId: 10000
+}
+
+docs {
+  ## 根据角色ID查询对应用户ID集合
+}

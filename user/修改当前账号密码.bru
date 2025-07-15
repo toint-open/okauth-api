@@ -1,0 +1,18 @@
+meta {
+  name: 修改当前账号密码
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/user/updatePassword
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "oldPassword": "admin1234",
+    "newPassword": "admin123"
+  }
+}
