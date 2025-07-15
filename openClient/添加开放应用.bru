@@ -5,18 +5,18 @@ meta {
 }
 
 post {
-  url: {{host}}/openClient/save
+  url: {{host}}/openClient/create
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "name": "测试应用",
-    "subjectId": "10000",
-    "secret": "okauth",
+    "name": "邹平城市e管家",
+    "subjectId": "10001",
+    "secret": "OVNNY8nxuWlNCk",
     "allowRedirectUris": [
-      "http://127.0.0.1"
+      "https://zhxzzfj.frp.toint.cn/api/"
     ]
   }
 }
